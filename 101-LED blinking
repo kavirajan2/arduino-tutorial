@@ -12,7 +12,7 @@ http://www.princetronics.com/wp-content/uploads/2014/01/led-diagram-arduino.jpg
 
 
 
-# Code:
+# Sample Code:
 /*
   Blink
   Turns on an LED on for one second, then off for one second, repeatedly.
