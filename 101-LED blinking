@@ -1,18 +1,18 @@
-101-LED blinking :
+# 101-LED blinking :
 
 This example shows the simplest thing you can do with an Arduino or Genuino to see physical output: it blinks the on-board LED.
 
-Hardware Required:
+# Hardware Required:
 1. Arduino or Genuino Board
 2. LED
 3. 220 ohm resistor
 
-Circuit Screenshot:
+# Circuit Screenshot:
 http://www.princetronics.com/wp-content/uploads/2014/01/led-diagram-arduino.jpg
 
 
 
-Code:
+# Code:
 /*
   Blink
   Turns on an LED on for one second, then off for one second, repeatedly.
