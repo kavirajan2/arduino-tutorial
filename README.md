@@ -1,4 +1,4 @@
-# arduino-tutorial from Contus
+# Arduino-tutorial from Contus
 
 # Arduino
 
