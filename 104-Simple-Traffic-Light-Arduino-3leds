@@ -1,0 +1,40 @@
+
+
+In this tutorial we are going to create a project to simulate a traffic light using arduino UNO R3 where the system will change from red to green, via amber and repeat this process again and again
+
+PINS USED: 13, 12, 11
+
+#Circuit: Screenshot:
+http://1.bp.blogspot.com/-umHCwkZd0F0/U2DGahNDz_I/AAAAAAAAATE/evNEykNVN_M/s1600/Skecth_Traffic_Light.png
+
+
+#Source Code:
+
+//Traffic light in arduino UNO R3
+int ledDelay = 10000; // delay in between changes
+int redPin = 13;
+int yellowPin = 12;
+int bluePin = 11;
+void setup() {
+  pinMode(redPin, OUTPUT);
+  pinMode(yellowPin, OUTPUT);
+  pinMode(bluePin, OUTPUT);
+}
+void loop() {
+  digitalWrite(redPin, HIGH); // turn the red light on
+  delay(ledDelay); // wait 5 seconds
+  
+  digitalWrite(yellowPin, HIGH); // turn on yellow
+  delay(2000); // wait 2 seconds
+  
+  digitalWrite(bluePin, HIGH); // turn green on
+  digitalWrite(redPin, LOW); // turn red off
+  digitalWrite(yellowPin, LOW); // turn yellow off
+  delay(ledDelay); // wait ledDelay milliseconds
+  
+  digitalWrite(yellowPin, HIGH); // turn yellow on
+  digitalWrite(bluePin, LOW); // turn green off
+  delay(2000); // wait 2 seconds
+  digitalWrite(yellowPin, LOW); // turn yellow off
+  // now our loop repeats
+}
